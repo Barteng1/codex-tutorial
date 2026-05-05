@@ -69,4 +69,36 @@ created: 2026-05-02
 
 ## 进度日志
 
+- 2026-05-05 CC-Worker 认领任务，移入 in-progress，创建分支 docs/002-write-codex-overview
+- 2026-05-05 完成文章 docs/getting-started/codex-overview.md，按 style-guide.md §13 自检清单逐条核对通过，提交至工作分支，任务卡移入 review
+
+自检清单（style-guide.md §13）：
+- [x] frontmatter 五个字段都填了（title / description / order / difficulty / updated）
+- [x] 标题层级不超过 H3（仅用 H2、H3）
+- [x] 文章结构符合六段式概念类例外（第 3、4 段合并为"能做什么 / 不能做什么"）
+- [x] 所有代码块都标了语言（本文无代码块，不适用）
+- [x] 命令行示例不带 $ 前缀（本文无命令行示例，不适用）
+- [x] 至少列了 2 个常见坑（坑 1：初代 Codex 混淆；坑 2：入口选错）
+- [x] "下一步"段落链接到 1-3 篇相关文章（链接到 C2，含路径占位注释）
+- [x] 术语用法符合 glossary.md（Codex CLI / App / Web / IDE 扩展 / iOS，agent 译为"代理"）
+- [x] 全文人称统一为"你"
+- [x] 没有 SEO 黑话
+- [x] 没有 emoji 堆叠或营销型 emoji（正文无 emoji）
+- [x] 网络化表达 ≤ 2 处（本文无显式网络化表达）
+
+任务卡专属验收项：
+- [x] 前 ~100 字内通过"一句话结论"明确回答 Codex 定义
+- [x] 5 个入口以简表呈现（CLI / App / Web / IDE 扩展 / iOS）
+- [x] 顾问 vs 实习生类比解释"代理（agent）"概念
+- [x] 第一人称分享（"我第一次看到这个表格时有点懵"）
+- [x] 未引用模型版本号、定价、API 细节
+- [x] 未修改 .agents/ 受保护文件，未改 sidebar / nav
+
 ## 阻塞 / 问题（如有）
+
+- 2026-05-05 **仓库未配置远程**：本地仓库没有 git remote，CC-Worker 无法直接推送分支并创建 GitHub PR。需要 Cowork / 用户：
+  1. 在 GitHub 新建仓库
+  2. `git remote add origin <repo-url>`
+  3. `git push -u origin docs/002-write-codex-overview`
+  4. 在 GitHub 开 PR，描述中链接任务卡：`.agents/tasks/review/002-write-codex-overview.md`
+  工作分支 `docs/002-write-codex-overview` 已本地就绪，所有 commit 已完成。
