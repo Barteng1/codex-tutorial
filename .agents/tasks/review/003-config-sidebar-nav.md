@@ -62,8 +62,10 @@ created: 2026-05-02
 - 2026-05-05: 本地启动 `corepack pnpm dev --host 127.0.0.1`，HTTP 验证 `/`、`/getting-started/`、`/getting-started/codex-overview`、`/beginner/`、`/intermediate/`、`/advanced/`、`/reference/` 均返回 200。
 - 2026-05-05: 运行 `corepack pnpm build` 失败，原因是既有文章 `docs/getting-started/codex-overview.md` 链接到尚未存在的 `../beginner/install-codex-cli.md`。该文件属于后续 C2 内容任务，未在本任务中自行补写或修改文章内容。
 - 2026-05-05: 尝试使用 Playwright 做移动端折叠菜单自动化验证，但当前环境未安装 `playwright` 模块，未继续引入额外依赖。
+- 2026-05-05: 检查 `git remote -v`，当前仓库未配置远程地址，无法 push 分支或创建 PR。
 
 ## 阻塞 / 问题（如有）
 
 - 2026-05-05: `pnpm build` 被既有死链阻塞：`docs/getting-started/codex-overview.md` 中的 `../beginner/install-codex-cli.md` 尚不存在。修复需要修改 C1 文章或新增 C2 文章文件，超出本任务边界。
 - 2026-05-05: 移动端折叠菜单未能完成真实浏览器自动化验证；环境缺少 Playwright，且本任务边界明确不要引入额外工具依赖。
+- 2026-05-05: 仓库没有配置 `origin` 或其他远程地址，无法完成 PR 创建。PR 描述应包含任务卡路径：`.agents/tasks/review/003-config-sidebar-nav.md`。
