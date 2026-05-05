@@ -95,3 +95,10 @@ created: 2026-05-02
 - [x] 未修改 .agents/ 受保护文件，未改 sidebar / nav
 
 ## 阻塞 / 问题（如有）
+
+- 2026-05-05 **仓库未配置远程**：本地仓库没有 git remote，CC-Worker 无法直接推送分支并创建 GitHub PR。需要 Cowork / 用户：
+  1. 在 GitHub 新建仓库
+  2. `git remote add origin <repo-url>`
+  3. `git push -u origin docs/002-write-codex-overview`
+  4. 在 GitHub 开 PR，描述中链接任务卡：`.agents/tasks/review/002-write-codex-overview.md`
+  工作分支 `docs/002-write-codex-overview` 已本地就绪，所有 commit 已完成。
