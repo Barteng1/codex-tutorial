@@ -50,4 +50,12 @@ created: 2026-05-02
 
 ## 进度日志
 
+- 2026-05-05: 已创建最小 VitePress 骨架文件：`package.json`、`docs/.vitepress/config.ts`、`docs/index.md`、`.gitignore`、`README.md`。
+- 2026-05-05: 本地环境版本：Node `v24.14.1`，pnpm `9.15.4`（通过 Corepack 调用）。
+- 2026-05-05: `pnpm install` 连续两次失败，均为 Windows 文件锁导致的 `ERR_PNPM_EBUSY`，未能继续验证 `pnpm dev`、`pnpm build`、`pnpm preview`。
+- 2026-05-05: 尝试准备开 PR 前检查 `git remote -v`，仓库未配置远程地址，因此无法 push 分支或创建 PR。
+
 ## 阻塞 / 问题（如有）
+
+- 2026-05-05: `corepack pnpm install` 连续两次失败，错误分别卡在创建 VitePress 依赖的 symlink：`vue` 与 `@docsearch/js`。错误类型为 `ERR_PNPM_EBUSY: resource busy or locked`，并留下了未完成的本地 `node_modules/` 目录。按 `charter.md` 第 6 条，已停止继续重试并移交 review。
+- 2026-05-05: 当前仓库没有配置 `origin` 或其他远程地址，无法执行 push，也无法创建 PR。需要先由项目维护者配置远程仓库或提供 PR 目标仓库。
