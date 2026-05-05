@@ -175,6 +175,6 @@ npm config delete https-proxy
 
 装好 Codex CLI 之后，就可以在真实项目里跑起来了：
 
-- **第一次跑通 Codex**（即将上线）——建议从这里开始，10 分钟完成第一次对话
+- [第一次跑通 Codex](./first-run.md)——建议从这里开始，10 分钟完成第一次对话
 - **用 Codex 修一个真实 bug**（即将上线）——一个完整的实战案例
 - [Codex 是什么](../getting-started/codex-overview.md)——如果你还没读过 C1，可以先回去看看背景
