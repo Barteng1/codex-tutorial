@@ -70,4 +70,30 @@ created: 2026-05-05
 
 ## 进度日志
 
+- 2026-05-05 CC-Worker 认领任务，创建任务卡并提交至 in-progress，基于 main 新建分支 docs/006-write-first-bug-fix
+- 2026-05-05 完成文章 `docs/beginner/fix-a-bug.md`，使用分页函数 off-by-one 真实案例，覆盖完整工作流：复现 bug → 描述给 Codex → 分析输出 → 确认修复 → 验证，4 个常见坑
+- 2026-05-05 同步将 C3（first-run.md）"下一步"中的占位文字改为真实链接 `[用 Codex 修一个真实 bug](./fix-a-bug.md)`
+- 2026-05-05 `pnpm build` 一次通过，build complete in 3.54s，无警告无报错
+
+自检清单（style-guide.md §13）：
+- [x] frontmatter 五个字段都填了（title / description / order / difficulty / updated）
+- [x] 标题层级不超过 H3（H2、H3）
+- [x] 文章结构符合六段式（为什么读这篇 / 一句话结论 / 案例步骤 / 完整可复现例子 / 常见坑 / 下一步）
+- [x] 所有代码块都标了语言（javascript / bash）
+- [x] 命令行示例不带 `$` 前缀
+- [x] 至少列了 2 个常见坑（共 4 个）
+- [x] "下一步"段落包含 C3 链接、C1 链接，C5 暂为纯文字
+- [x] 术语用法符合 glossary.md（Codex CLI、审批模式、off-by-one）
+- [x] 全文人称统一为"你"
+- [x] 没有 SEO 黑话
+- [x] 没有 emoji 堆叠或营销型 emoji
+- [x] 网络化表达 ≤ 2 处（本文无网络化表达）
+
+任务卡专属验收项：
+- [x] 案例使用真实具体代码（分页函数），可直接 copy 复现
+- [x] 展示完整工作流（复现 → 描述 → 分析 → 确认 → 验证）
+- [x] `pnpm build` 通过
+
 ## 阻塞 / 问题（如有）
+
+- C5《命令速查表》尚未完成，"下一步"中 C5 链接暂用纯文字"即将上线"，待 C5 完成后需回来补链接。
