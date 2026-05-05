@@ -63,4 +63,27 @@ created: 2026-05-05
 
 ## 进度日志
 
+- 2026-05-05 CC-Worker 认领任务，创建任务卡并提交至 in-progress，基于 main 新建分支 docs/007-write-commands-reference
+- 2026-05-05 完成文章 `docs/reference/commands.md`，覆盖四部分：CLI 启动命令（基本用法 + 参数表）、会话内斜杠命令、审批模式、环境变量，含两处 ::: tip/::: warning 补充说明
+- 2026-05-05 同步将 C4（fix-a-bug.md）"下一步"中的占位文字改为真实链接 `[命令速查表](../reference/commands.md)`
+- 2026-05-05 `pnpm build` 一次通过，build complete in 3.22s，无警告无报错
+
+自检清单（style-guide.md §13，适用项）：
+- [x] frontmatter 五个字段都填了（title / description / order / difficulty / updated）
+- [x] 标题层级不超过 H3（H2、H3）
+- [x] 参考类文章，未强制六段式，保持速查风格
+- [x] 所有代码块都标了语言（bash）
+- [x] 命令行示例不带 `$` 前缀
+- [x] 术语用法符合 glossary.md（斜杠命令、审批模式、AGENTS.md）
+- [x] 全文人称统一为"你"
+- [x] 没有 SEO 黑话
+- [x] 没有 emoji 堆叠或营销型 emoji
+
+任务卡专属验收项：
+- [x] 覆盖 CLI 启动参数（基本用法 + 参数表）
+- [x] 覆盖斜杠命令（全部 6 条）
+- [x] 覆盖审批模式（三种对比表 + 注意事项）
+- [x] 包含环境变量（OPENAI_API_KEY 等 4 个）
+- [x] `pnpm build` 通过
+
 ## 阻塞 / 问题（如有）
