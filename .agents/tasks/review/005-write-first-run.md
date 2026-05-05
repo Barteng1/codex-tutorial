@@ -70,4 +70,31 @@ created: 2026-05-05
 
 ## 进度日志
 
+- 2026-05-05 CC-Worker 认领任务，创建任务卡并提交至 in-progress，基于 main 新建分支 docs/005-write-first-run
+- 2026-05-05 完成文章 `docs/beginner/first-run.md`，内容含：启动流程、审批模式三种对比表、完整可复现例子（为函数加 JSDoc 注释）、4 个常见坑
+- 2026-05-05 同步将 C2（install-codex-cli.md）"下一步"中的占位文字改为真实链接 `[第一次跑通 Codex](./first-run.md)`
+- 2026-05-05 首次 `pnpm build` 失败：C4 占位链接 `./fix-a-bug.md` 尚不存在，产生死链；改为纯文字"即将上线"
+- 2026-05-05 第二次 `pnpm build` 通过，build complete in 2.56s，无警告无报错
+
+自检清单（style-guide.md §13）：
+- [x] frontmatter 五个字段都填了（title / description / order / difficulty / updated）
+- [x] 标题层级不超过 H3（H2、H3）
+- [x] 文章结构符合六段式（为什么读这篇 / 一句话结论 / 启动与基本操作 / 完整可复现例子 / 常见坑 / 下一步）
+- [x] 所有代码块都标了语言（bash / javascript）
+- [x] 命令行示例不带 `$` 前缀
+- [x] 至少列了 2 个常见坑（共 4 个）
+- [x] "下一步"段落链接到 C2 和 C1，C4 暂为纯文字
+- [x] 术语用法符合 glossary.md（审批模式、Codex CLI、AGENTS.md）
+- [x] 全文人称统一为"你"
+- [x] 没有 SEO 黑话
+- [x] 没有 emoji 堆叠或营销型 emoji
+- [x] 网络化表达 ≤ 2 处（本文无网络化表达）
+
+任务卡专属验收项：
+- [x] 包含完整可复现的第一次对话示例（从 `codex` 启动到看到结果）
+- [x] 解释审批模式（untrusted / on-request / never）并用对比表呈现
+- [x] `pnpm build` 通过
+
 ## 阻塞 / 问题（如有）
+
+- C4《用 Codex 修一个真实 bug》尚未完成，"下一步"中 C4 链接暂用纯文字"即将上线"，待 C4 完成后需回来补链接。
