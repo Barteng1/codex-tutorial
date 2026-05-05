@@ -1,0 +1,7 @@
+:root {
+  --vp-font-family-base: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+body {
+  font-family: var(--vp-font-family-base);
+}
