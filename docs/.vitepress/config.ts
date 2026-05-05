@@ -4,13 +4,6 @@ export default defineConfig({
   title: 'Codex 学习站',
   description: '面向初次使用者的 Codex 实操教程',
   lang: 'zh-CN',
-  appearance: true,
-  markdown: {
-    theme: {
-      light: 'github-light',
-      dark: 'github-dark'
-    }
-  },
   themeConfig: {
     nav: [
       {

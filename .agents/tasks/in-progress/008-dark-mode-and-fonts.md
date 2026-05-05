@@ -56,11 +56,4 @@ depends_on: 003
 
 ## 进度日志
 
-- 2026-05-05: 已在 `docs/.vitepress/config.ts` 添加 `appearance: true`，并配置 `markdown.theme` 为 `{ light: 'github-light', dark: 'github-dark' }`。
-- 2026-05-05: 已新增 `docs/.vitepress/theme/index.ts` 继承 VitePress 默认主题，并引入 `docs/.vitepress/theme/custom.css`；CSS 仅覆盖 `--vp-font-family-base` 与 `body` 字体栈，未引入字体文件或额外 npm 包。
-- 2026-05-05: 本地环境版本：Node `v24.14.1`，pnpm `9.15.4`。
-- 2026-05-05: 运行 `corepack pnpm dev --host 127.0.0.1`，访问 `/`、`/getting-started/codex-overview`、`/beginner/install-codex-cli`、`/beginner/first-run` 均返回 200。
-- 2026-05-05: 使用 Windows Chrome headless + DevTools Protocol 验证 `/beginner/install-codex-cli`：存在 `VPSwitchAppearance` 明暗切换按钮；点击后 `html.dark` 与按钮标题在明暗状态间切换；`body` 计算字体为 `"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif`；页面代码块数量为 27，Shiki token 样式包含 `--shiki-light` 与 `--shiki-dark` 双主题变量。
-- 2026-05-05: 运行 `corepack pnpm build` 成功，VitePress build complete，无报错。
-
 ## 阻塞 / 问题（如有）
