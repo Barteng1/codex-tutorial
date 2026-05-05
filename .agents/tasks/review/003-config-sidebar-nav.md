@@ -57,4 +57,13 @@ created: 2026-05-02
 
 ## 进度日志
 
+- 2026-05-05: 已在 `docs/.vitepress/config.ts` 新增 `themeConfig.nav` 与全局 `themeConfig.sidebar`，配置文件变更行数为 `+62/-1`。
+- 2026-05-05: 已创建五个章节占位首页：`docs/getting-started/index.md`、`docs/beginner/index.md`、`docs/intermediate/index.md`、`docs/advanced/index.md`、`docs/reference/index.md`，均包含 `style-guide.md` §7 要求的 frontmatter 字段、一个 H1 标题和正文一行 `本章节内容建设中`。
+- 2026-05-05: 本地启动 `corepack pnpm dev --host 127.0.0.1`，HTTP 验证 `/`、`/getting-started/`、`/getting-started/codex-overview`、`/beginner/`、`/intermediate/`、`/advanced/`、`/reference/` 均返回 200。
+- 2026-05-05: 运行 `corepack pnpm build` 失败，原因是既有文章 `docs/getting-started/codex-overview.md` 链接到尚未存在的 `../beginner/install-codex-cli.md`。该文件属于后续 C2 内容任务，未在本任务中自行补写或修改文章内容。
+- 2026-05-05: 尝试使用 Playwright 做移动端折叠菜单自动化验证，但当前环境未安装 `playwright` 模块，未继续引入额外依赖。
+
 ## 阻塞 / 问题（如有）
+
+- 2026-05-05: `pnpm build` 被既有死链阻塞：`docs/getting-started/codex-overview.md` 中的 `../beginner/install-codex-cli.md` 尚不存在。修复需要修改 C1 文章或新增 C2 文章文件，超出本任务边界。
+- 2026-05-05: 移动端折叠菜单未能完成真实浏览器自动化验证；环境缺少 Playwright，且本任务边界明确不要引入额外工具依赖。
