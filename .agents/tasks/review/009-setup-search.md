@@ -50,4 +50,10 @@ search: {
 
 ## 进度日志
 
+- 2026-05-06: 已在 `docs/.vitepress/config.ts` 的 `themeConfig` 中新增 VitePress 内置 local search 配置：`search: { provider: 'local' }`。
+- 2026-05-06: 未修改 `package.json`，未安装额外 npm 包，未引入 Algolia 或第三方搜索服务。
+- 2026-05-06: 运行 `corepack pnpm dev --host 127.0.0.1`，访问 `/` 与 `/getting-started/codex-overview` 均返回 200。
+- 2026-05-06: 使用 Windows Chrome headless + DevTools Protocol 验证搜索入口存在；搜索 `Codex` 返回 `/getting-started/codex-overview.html`、`/beginner/install-codex-cli.html`、`/beginner/first-run.html` 等结果；搜索 `安装` 返回 `/beginner/install-codex-cli.html` 及相关章节锚点。
+- 2026-05-06: 运行 `corepack pnpm build` 成功，VitePress build complete，无报错。
+
 ## 阻塞 / 问题（如有）

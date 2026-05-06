@@ -12,6 +12,9 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     nav: [
       {
         text: '入门',
