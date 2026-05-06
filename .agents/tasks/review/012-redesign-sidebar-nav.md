@@ -57,4 +57,11 @@ created: 2026-05-06
 
 ## 进度日志
 
+- 2026-05-06: 已在 `docs/.vitepress/theme/custom.css` 追加侧边栏、顶部导航、链接状态和滚动条样式；复用任务 #011 已定义的 `--vp-c-brand-*` 变量，未重复定义品牌色变量。
+- 2026-05-06: 未改动任何 Markdown 文章内容，未引入额外 npm 包。
+- 2026-05-06: 运行 `corepack pnpm dev --host 127.0.0.1`，访问 `/getting-started/codex-overview`、`/beginner/install-codex-cli`、`/reference/commands` 均返回 200。
+- 2026-05-06: 使用 Windows Chrome headless + DevTools Protocol 验证 `/getting-started/codex-overview`：侧边栏分组标题加粗且颜色为 `rgb(99, 102, 241)`；当前激活条目左侧边线为 `2px` 且颜色为 `rgb(99, 102, 241)`；激活条目背景为 `rgba(99, 102, 241, 0.1)`；顶部导航激活项颜色为 `rgb(99, 102, 241)`；正文链接颜色和滚动条颜色使用品牌色。
+- 2026-05-06: 移动端宽度 390px 验证存在折叠菜单按钮，点击后菜单正常展开，页面无横向溢出。
+- 2026-05-06: 运行 `corepack pnpm build` 成功，VitePress build complete，无报错。
+
 ## 阻塞 / 问题（如有）
