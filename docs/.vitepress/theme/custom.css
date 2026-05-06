@@ -16,3 +16,56 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.VPSidebarItem.level-0 > .item .text {
+  color: var(--vp-c-brand-1) !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.VPSidebarItem .item {
+  border-left: 2px solid transparent;
+}
+
+.VPSidebarItem.is-active > .item {
+  border-left-color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+}
+
+.VPSidebarItem .item:hover {
+  background-color: var(--vp-c-brand-soft);
+}
+
+.VPNav {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-brand-1);
+}
+
+* {
+  scrollbar-color: var(--vp-c-brand-3) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--vp-c-brand-3);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.vp-doc a,
+.vp-doc a:hover,
+.vp-doc a:active {
+  color: var(--vp-c-brand-1);
+}
