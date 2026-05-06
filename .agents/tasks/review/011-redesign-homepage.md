@@ -76,4 +76,12 @@ created: 2026-05-06
 
 ## 进度日志
 
+- 2026-05-06: 已将 `docs/index.md` 改为 VitePress 默认 home layout 的 `hero` + `features` 结构，包含站点名、价值说明、副标题、两个 action 按钮和三张 feature 卡片。
+- 2026-05-06: 已在 `docs/.vitepress/theme/custom.css` 追加紫蓝渐变 Hero 标题样式，并覆盖 brand 变量：`#6366f1`、`#4f46e5`、`#818cf8`、`rgba(99, 102, 241, 0.1)`。
+- 2026-05-06: 未引入额外 npm 包、图片资源或字体资源；未改动文章页内容。
+- 2026-05-06: 运行 `corepack pnpm dev --host 127.0.0.1`，访问 `/`、`/getting-started/codex-overview`、`/reference/commands` 均返回 200。
+- 2026-05-06: 使用 Windows Chrome headless + DevTools Protocol 验证首页：Hero 标题、text、tagline、两个按钮、三张 feature 卡片均渲染；`开始学习` 链接到 `/getting-started/codex-overview.html`，`查看命令速查` 链接到 `/reference/commands.html`；Hero 标题计算样式为 `linear-gradient(120deg, rgb(99, 102, 241), rgb(59, 130, 246))`；brand 变量为 `#6366f1`。
+- 2026-05-06: 移动端宽度 390px 验证无横向溢出，Hero、features、actions 宽度均在视口内。
+- 2026-05-06: 运行 `corepack pnpm build` 成功，VitePress build complete，无报错。
+
 ## 阻塞 / 问题（如有）
