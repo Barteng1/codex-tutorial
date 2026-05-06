@@ -51,4 +51,9 @@ depends_on: 003
 
 ## 进度日志
 
+- 2026-05-06: 选择 Cloudflare Pages 控制台直连 GitHub 的部署方式；原因是本任务不需要真正部署，且当前没有 GitHub remote 和 Cloudflare 账号权限，README 说明比新增 GitHub Actions workflow 更符合 MVP 边界。
+- 2026-05-06: 已在 `README.md` 新增"部署"章节，写明 Cloudflare Pages 配置：build command 为 `pnpm build`，output dir 为 `docs/.vitepress/dist`，并补充自定义域名绑定步骤。
+- 2026-05-06: 已确认 `docs/.vitepress/config.ts` 未设置 `base`，保持 VitePress 默认根路径，适用于根域名或 Cloudflare Pages 默认域名部署；若未来部署到子路径，再设置对应 `base`。
+- 2026-05-06: 运行 `corepack pnpm build` 成功，VitePress build complete，无报错；已确认输出目录 `docs/.vitepress/dist` 存在并包含 `index.html`、`404.html`、`assets/` 等构建产物。
+
 ## 阻塞 / 问题（如有）
